@@ -1,0 +1,28 @@
+/* colores:
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;*/
+
+header {
+    background-color: #EAC926;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2  {
+    font-size: 24px;
+}
+.precios {
+    font-size: 12px;
+}
+.descuentos {
+    font-size: 16px;
+}
+h4 {
+    font-size: 16px;
+}
+.centrado {
+    text-align: center;
+}
