@@ -1,45 +1,115 @@
-/* colores:
-Amarillo: #EAC926;
-Azul: #03264C;
-Celeste: #1259c3;
-Gris oscuro: #666;
-Gris claro: #ebebeb;
-Verde: #39b54a;*/
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;}
 
 header {
-    background-color: #EAC926;
-    font-family: 'Roboto', sans-serif;
+    background-color: #EAC926;}
+
+footer {
+    background-color: #ffffff;
 }
 
+.logo-header {
+    width: 60%;
+    margin: 0, auto;
+    padding: 20px;}
+
+.search-header {
+    margin: auto;}
+
+.lista {
+    padding: 10px}
+
+.search {
+    padding-top: 10px;
+    margin-left: 10px;}
+
 h2  {
-    font-size: 24px;
-}
+    font-size: 24px;}
+
 .precios {
-    font-size: 12px;
-}
+    font-size: 12px;}
+
 .descuentos {
     font-size: 16px;
-}
+    color: #39b54a;}
+
 h4 {
     font-size: 16px;
-}
+    padding-top: 10px;
+    display: none;}
+
 .centrado {
     margin: auto;
-}
-.burger-menu {
-    background-color: blue;
-    color: white;
-    font-size: 45px;
-    width: 50px;
-    height: 50px;
+    margin-bottom: 20px;}
+
+.centrado-main {
     margin: auto;
-    text-align: center;
-}
+    width: 90%;}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    margin: 20px 0px 20px 140px;
+    padding: 15px;}
+
 .buscador {
     width: 75%;
     height: 10px;
-    padding: 10px;
+    padding: 10px;}
+
+.separacion {
+    margin-bottom: 20px;}
+
+
+.separacion-footer {
+    padding-top: 30px;
 }
-.fas {
-    margin: auto;
+
+main section article i {
+    color: #39b54a;
+    padding-bottom: 15px;}
+
+.main-section {
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.main-producto {
+    background-color: white;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    border-radius: 5px;
+    line-height: 20px;}
+
+.footer-p {
+    text-align: center;
+    padding: 40px;}
+
+footer section article i {
+        color:blue;
+        font-size: 40px;
+        padding: 5px;}
+
+.copyr {
+    font-size: 13px;
+    padding-bottom: 20px;}
+
+@media (min-width: 361px) {
+    h4 {display: inline-block;}
+    article.separacion {box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media (min-width: 769px) {
+    h4 {display: inline-block;}
+    
+    
 }
