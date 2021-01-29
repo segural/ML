@@ -8,6 +8,8 @@ Verde: #39b54a;*/
 * {
     box-sizing: border-box;
     font-family: Roboto;
+    margin: 0;
+    padding: 0;
 }
 body {
     background-color: #ebebeb;
@@ -62,12 +64,22 @@ header {
 h2  {
     font-size: 24px;
 }
+.contenedor-articulos {
+    display: flex;
+}
+.precio-descuento {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
 .precios {
-    font-size: 12px;
+    font-size: 16px;
+    flex-grow: 3;
 }
 .descuentos {
     font-size: 16px;
     color: #39b54a;
+    flex-grow: 7;
 }
 h4 {
     font-size: 16px;
@@ -82,8 +94,18 @@ h4 {
     margin-bottom: 20px;
 }
 main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    right: 40px;
+    /* top: -15px; */
     color: #39b54a;
-    padding-bottom: 15px;
 }
 .main-section {
     padding: 0;
