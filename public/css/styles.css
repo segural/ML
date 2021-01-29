@@ -1,115 +1,192 @@
+/*Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;*/
+
 * {
     box-sizing: border-box;
-    margin:0;
-    padding:0;}
-
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: #ebebeb;}
-
-header {
-    background-color: #EAC926;}
-
-footer {
-    background-color: #ffffff;
+    font-family: Roboto;
+}
+body {
+    background-color: #ebebeb;
 }
 
-.logo-header {
-    width: 60%;
-    margin: 0, auto;
-    padding: 20px;}
+/*head*/
+header {
+    background-color: #EAC926 ;
+    padding: 20px;
+}
 
-.search-header {
-    margin: auto;}
+.logo {
+    width: 200px;
+}
 
-.lista {
-    padding: 10px}
+.text-cuotas {
+    font-weight: 400;
+    text-align: center;
+}
 
-.search {
-    padding-top: 10px;
-    margin-left: 10px;}
+.hamburguer-button {
+    background-color: #03264C;
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    font-size: 17px;
+    text-align: center;
+    margin: auto;
+}
 
+.main-navbar {
+    display: none;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+/*main*/
 h2  {
-    font-size: 24px;}
-
+    font-size: 24px;
+}
 .precios {
-    font-size: 12px;}
-
+    font-size: 12px;
+}
 .descuentos {
     font-size: 16px;
-    color: #39b54a;}
-
+    color: #39b54a;
+}
 h4 {
     font-size: 16px;
     padding-top: 10px;
-    display: none;}
-
-.centrado {
-    margin: auto;
-    margin-bottom: 20px;}
-
+    display: none;
+}
 .centrado-main {
     margin: auto;
-    width: 90%;}
-
-div.burger-menu i{
-    background-color: #0044AA;
-    border-radius: 5px;
-    color: #FFF;
-    font-size: 20px;
-    margin: 20px 0px 20px 140px;
-    padding: 15px;}
-
-.buscador {
-    width: 75%;
-    height: 10px;
-    padding: 10px;}
-
-.separacion {
-    margin-bottom: 20px;}
-
-
-.separacion-footer {
-    padding-top: 30px;
+    width: 90%;
 }
-
+.separacion {
+    margin-bottom: 20px;
+}
 main section article i {
     color: #39b54a;
-    padding-bottom: 15px;}
-
+    padding-bottom: 15px;
+}
 .main-section {
     padding: 0;
     margin-bottom: 15px;
 }
-
 .main-producto {
     background-color: white;
     border-top: solid 1px #ebebeb;
     padding: 15px;
     border-radius: 5px;
-    line-height: 20px;}
+    line-height: 20px;
+}
+
+/*footer*/
+footer {
+    background-color: #ffffff;
+}
+
+.separacion-footer {
+    padding-top: 30px;
+}
 
 .footer-p {
     text-align: center;
-    padding: 40px;}
+    padding: 40px;
+}
 
 footer section article i {
         color:blue;
         font-size: 40px;
-        padding: 5px;}
+        padding: 5px;
+    }
 
 .copyr {
     font-size: 13px;
-    padding-bottom: 20px;}
+    padding-bottom: 20px;
+}
 
+
+/* Responsive*/
 @media (min-width: 361px) {
-    h4 {display: inline-block;}
+    h4 {display: inline-block;
+    }
     article.separacion {box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    nav li {
+        display: block;
+        margin-bottom: 5px;
+    }
+    div.burger-menu i{
+        display: none;
     }
 }
 
 @media (min-width: 769px) {
-    h4 {display: inline-block;}
-    
-    
+    .main-header-top-bar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .text-cuotas {
+        max-width: 350px;
+        text-align: right;
+    }
+    .hamburguer-button {
+        display: none;
+    }
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul {
+        display: flex;
+    }
+    .main-navbar li {
+        margin: 0 5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-header-top-bar, .main-navbar {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .logo {
+        width: 250px;
+    }
+    .main-header-top-bar {
+        align-items: center;
+    }
+
+    .text-cuotas {
+        max-width: none;
+        font-size: 22px;
+        margin: 0;
+    }
+    .main-navbar {
+        margin-top: 15px;
+    }
+    .main-navbar li {
+        margin: 0 10px;
+    }
+    .main-navbar a {
+        font-size: 19px;
+        font-weight: 400;
+    }
 }

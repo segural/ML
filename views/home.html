@@ -5,56 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primer documento en HTML</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet"
-    href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css ">
-    <link rel="stylesheet" href="/css/normalize.css"> 
-    <link rel="stylesheet" href="/css/styles.css"> 
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/79191db9a5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head> 
 <body>
-    <header>
-        <div class="logo-header">
-                <img src="/images/logo-mercado-liebre.svg" alt="">
-            </div>
-        <nav>
-            <p><form>
-              <input class="buscador" type="search" placeholder="Buscar productos, marcas y más" aria-label="Buscar">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i>
-              </button>
-            </form></p>
-            <p class="search"><i class="fas fa-hand-holding-usd"><span>Comprá en cuotas y sin tarjeta de crédito</span></i></p>
-            <p class="lista"><ul>
-                <li><a href="/"> Ofertas </a></li>
-                <li><a href="/"> Tiendas Oficiales </a></li>
-                <li><a href="/"> Vender </a></li>
-                <li><a href="/"> Ayuda </a></li>
-            </ul></p>
-            <p class="lista"><ul>
-                <li><a href="/"> Creá tu cuenta </a><i class="far fa-address-card"></i></li>
-                <li><a href="/"> Ingresá </a><i class="fas fa-sign-in-alt"></i></li>
-                <li><a href="/"> Mis compras </a><i class="fas fa-shopping-basket"></i></li>
-            </ul></p>
-            <div class="burger-menu">
-                <i class="fa fa-bars"></i>
-            </div>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="/images/logo-mercado-liebre.svg" class="logo">
+        <h2 class="text-cuotas">
+            <i class="fas fa-hand-holding-usd"></i>
+            Comprá en cuotas y sin tarjeta de crédito</h2>
+        </div>
+
+        <a href="#" class="hamburguer-button">
+            <i class="fas fa-bars"></i>
+        </a>
+
+        <nav class="main-navbar">
+            <ul class="left-navbar"> 
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+
+            <ul class="right-navbar"> 
+                <li><a href="#">Crea tu cuenta <i class="far fa-id-card"></i></a></li>
+                <li><a href="#">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Tus Compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>       
         </nav>
     </header>
-    <section>
-        <img src="images/img-home-banner.jpg" alt="" width="100%">
-    </section>
-        <main class="centrado-main">
+<section>
+    <img src="images/img-home-banner.jpg" alt="" width="100%">
+</section>
+    <main class="centrado-main">
         <section>
             <div class="main-section">
             <h2>Basado en tu última visita</h2>
-        </div>
+            </div>
             <article class="separacion">
             <img src="images/img-cafetera-moulinex.jpg" alt="" width="100%">
             <div class="main-producto">
                 <i class="fas fa-truck"></i>
                 <p class="precios">$6.770</p>
                 <p class="descuentos">40% off</p>
-                <h4>Cafetera Moulinex</h4>
-            </div>
+                 <h4>Cafetera Moulinex</h4>
+             </div>
             </article>
             <article class="separacion">
             <img src="images/img-macbook-pro-2019.jpg" alt="" width="100%">
@@ -84,9 +83,10 @@
             </div>  
             </article>
         </section>
-        <section>
+            <section>
             <div class="main-section">
-                <h2>Ofertas</h2></div>
+            <h2>Ofertas</h2>
+            </div>
                 <article class="separacion">
                 <img src="images/img-cafetera-moulinex.jpg" alt="" width="100%">
                 <div class="main-producto">
@@ -123,7 +123,7 @@
                     <h4>SmartTv Samsung 43"</h4>
                 </div>
                 </article>
-        </section>
+            </section>
     </main>
     <footer>
         <section>         

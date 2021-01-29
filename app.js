@@ -9,7 +9,7 @@ app.use(express.static (publicPath));
 //hago la peticion al server de las htmls
 app.get ('/', (req,res) =>{
     res.sendFile (path.resolve ('views/home.html'))
-})
+});
 
 //levanto server express en puerto 3000
 app.listen (3000, () => {
