@@ -20,12 +20,21 @@ header {
     background-color: #EAC926 ;
     padding: 20px;
 }
+.main-header-top-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.header-form {
+    width: 25%;
+}
 .logo {
     width: 200px;
 }
 .text-cuotas {
     font-weight: 400;
     text-align: center;
+    width: 30%;
 }
 .hamburguer-button {
     background-color: #03264C;
@@ -123,13 +132,15 @@ main section article i:hover {
 
 /* main register */
 .main-register {
-    margin: 10px 0;
+    margin: auto;
+    max-width: 600px;
 }
 .form-class {
     padding: 15px;
 }
 .control-form {
  padding: 10px ;
+ margin-bottom: 20px;
 }
 .control-form label {
     display: block;
@@ -150,10 +161,41 @@ main section article i:hover {
     margin-top: 15px;
     text-align: center;
 }
+form input {
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+}
+.radio-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+.radio-form input{
+    height: 20px;
+    width: 20%;
+    margin-bottom: 10px;
+}
+.check-form {
+    width: 300px;
+}
+.check-form label {
+    text-align: center;
+}
+.check-form input{
+    height: 20px;
+    width: 70%;
+    margin-bottom: 10px;
+}
+.interes {
+    display: flex;
+    justify-content: flex-end;
+}
 /* Main login */
 .main-login {
     text-align: center;
-    border: #000000 solid 2px;
+    max-width: 400px;
+    margin: auto ;
+    padding: 20px 0;
 }
 .boton-enviar {
     background-color: lightblue;
@@ -268,8 +310,9 @@ footer section div i {
         font-size: 14px;
         text-align: right;
     }
-    .footer-section {
+    .main-footer {
         display: flex;
+        flex-wrap: nowrap;
     }
     footer section div i:hover {
         color: lightblue;

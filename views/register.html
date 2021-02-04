@@ -38,23 +38,23 @@
     <main class="main-register">
         <form action="/register" method="POST" class="form-class">
             <div class="control-form">
-                <label for="nombre">Nombre:</label>
+                <!-- <label for="nombre">Nombre:</label> -->
                 <input type="text" id="nombre" placeholder="Ingrese su nombre" name="nombre"  minlength="5" class="control">
             </div>
             <div class="control-form">
-                <label for="apellido">Apellido:</label>
+                <!-- <label for="apellido">Apellido:</label> -->
                 <input type="text" id="apellido" placeholder="Ingrese su apellido" name="apellido" minlength="5" class="control">
             </div>
             <div class="control-form">
-                <label for="username">Username:</label>
+                <!-- <label for="username">Username:</label> -->
                 <input type="text" id="username" placeholder="Ingrese su username" name="username" minlength="5" class="control">
             </div>
             <div class="control-form">
-                <label for="date">Nacimiento:</label>
+                <label for="date">Fecha de Nacimiento</label>
                 <input type="date" id="date" class="control">
             </div>
             <div class="control-form">
-                <label for="direccion">Domicilio:</label>
+                <!-- <label for="direccion">Domicilio:</label> -->
                 <input type="text" id="direccion" placeholder="Ingrese su domicilio" name="direccion" minlength="5" class="control">
             </div>
             <hr>
@@ -62,7 +62,7 @@
             <div class="control-form">
                 <label>Qué tipo de perfil tiene?</label>
             </div>
-            <div>
+            <div class="radio-form">
                 <label for="comprador">Comprador</label>
                 <input type="radio" id="comprador" name="perfil">
                 <label for="vendedor">Vendedor</label>
@@ -73,21 +73,31 @@
             <div class="control-form">
                 <label>Categorias de interés</label>
             </div>
-            <div>
+            <div class="check-form">
+                <div class="interes">
                 <label for="electro">Electro</label>
                 <input type="checkbox" id="electro" name="electro">
+                </div>
                 <br>
+                <div class="interes">
                 <label for="moda">Moda</label>
                 <input type="checkbox" id="moda" name="moda">
+                </div>
                 <br>
+                <div class="interes">
                 <label for="hogar">Hogar</label>
                 <input type="checkbox" id="hogar" name="hogar">
+                </div>
                 <br>
+                <div class="interes">
                 <label for="juguete">Juguetería</label>
                 <input type="checkbox" id="juguete" name="juguete">
+                </div>
                 <br>
+                <div class="interes">
                 <label for="vida">Vida Sana</label>
-                <input type="checkbox" id="vida" name="vida"> 
+                <input type="checkbox" id="vida" name="vida">
+                </div> 
             </div>
             <hr>
             <hr>
