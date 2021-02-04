@@ -3,12 +3,22 @@ const express = require ('express');
 const path = require ('path');
 const app = express ();
 const publicPath = path.resolve ('public');
+// const bodyParser = require ('bodyParser');
 
 app.use(express.static (publicPath));
 
+// app.use(bodyParser.urlencoded({ extended: true })); 
+
+
 //hago la peticion al server de las htmls
 app.get ('/', (req,res) =>{
-    res.sendFile (path.resolve ('views/home.html'))
+    res.sendFile (path.resolve ('./views/home.html'))
+});
+app.get ('/register', (req,res) =>{
+    res.sendFile (path.resolve ('./views/register.html'))
+});
+app.get ('/login', (req,res) =>{
+    res.sendFile (path.resolve ('./views/login.html'))
 });
 
 //levanto server express en puerto 3000

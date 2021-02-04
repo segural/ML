@@ -20,16 +20,13 @@ header {
     background-color: #EAC926 ;
     padding: 20px;
 }
-
 .logo {
     width: 200px;
 }
-
 .text-cuotas {
     font-weight: 400;
     text-align: center;
 }
-
 .hamburguer-button {
     background-color: #03264C;
     color: #ffffff;
@@ -41,17 +38,14 @@ header {
     text-align: center;
     margin: auto;
 }
-
 .main-navbar {
     display: none;
 }
-
 .main-navbar ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-
 .main-navbar a {
     text-decoration: none;
     color: #222222;
@@ -64,24 +58,28 @@ header {
 h2  {
     font-size: 24px;
 }
-.contenedor-articulos {
+.main-producto {
+    width: 100%;
+    background-color: #fff;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    border-radius: 5px;
+    line-height: 20px;
     display: flex;
-}
-.precio-descuento {
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
 }
 .precios {
-    font-size: 16px;
-    flex-grow: 3;
+    font-size: 18px;
+    width: 30%;
 }
 .descuentos {
     font-size: 16px;
     color: #39b54a;
-    flex-grow: 7;
+    width: 70%;
+    font-weight: 300;
 }
-h4 {
+.descripcion {
     font-size: 16px;
     padding-top: 10px;
     display: none;
@@ -103,25 +101,79 @@ main section article i {
     border-radius: 50%;
     background-color: #fff;
     position: absolute;
-    right: 40px;
-    /* top: -15px; */
+    right: 20px;
+    top: -15px;
     color: #39b54a;
+}
+main section article i:hover {
+    animation: rotation 1s infinite alternate;
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-90deg);
+    }
 }
 .main-section {
     padding: 0;
     margin-bottom: 15px;
 }
-.main-producto {
-    background-color: white;
-    border-top: solid 1px #ebebeb;
+
+/* main register */
+.main-register {
+    margin: 10px 0;
+}
+.form-class {
     padding: 15px;
-    border-radius: 5px;
-    line-height: 20px;
+}
+.control-form {
+ padding: 10px ;
+}
+.control-form label {
+    display: block;
+    font-style: italic;
+}
+.control {
+    width: 100%;
+}
+.reg-button {
+    color: #000000;
+    border-radius: 8px;
+    background-color: #EAC926;
+    border: solid 1px #000000;
+    padding: 5px 15px;
+    font-weight: 600 ;
+}
+.main-reg-button {
+    margin-top: 15px;
+    text-align: center;
+}
+/* Main login */
+.main-login {
+    text-align: center;
+    border: #000000 solid 2px;
+}
+.boton-enviar {
+    background-color: lightblue;
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin:15px 0;
+}
+.boton-enviar:hover {
+    background-color: #0022AA;
+}
+label {
+    font-weight: 700;
+}
+input {
+    width: 100%;
 }
 
 /*footer*/
 footer {
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 .separacion-footer {
@@ -133,7 +185,7 @@ footer {
     padding: 40px;
 }
 
-footer section article i {
+footer section div i {
         color:blue;
         font-size: 40px;
         padding: 5px;
@@ -147,9 +199,9 @@ footer section article i {
 
 /* Responsive*/
 @media (min-width: 361px) {
-    h4 {display: inline-block;
+     article:hover .descripcion {display: block;
     }
-    article.separacion {box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    article:hover {box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     nav li {
         display: block;
@@ -158,9 +210,28 @@ footer section article i {
     div.burger-menu i{
         display: none;
     }
+    .contenedor-articulos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .separacion {
+        width: 45%;
+        margin: 5px;
+    }
+    .precios {
+        font-size: 16px;
+    }
+    .descuentos {
+        font-size: 14px;
+        text-align: right;
+    }
 }
-
 @media (min-width: 769px) {
+    article:hover .descripcion {display: block;
+    }
+    article:hover {box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
     .main-header-top-bar {
         display: flex;
         justify-content: space-between;
@@ -182,9 +253,34 @@ footer section article i {
     .main-navbar li {
         margin: 0 5px;
     }
+    .contenedor-articulos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .separacion {
+        width: 23%;
+    }
+    .precios {
+        font-size: 16px;
+    }
+    .descuentos {
+        font-size: 14px;
+        text-align: right;
+    }
+    .footer-section {
+        display: flex;
+    }
+    footer section div i:hover {
+        color: lightblue;
+    }
 }
 
 @media (min-width: 1200px) {
+    article:hover .descripcion {display: block;
+    }
+    article:hover {box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
     .main-header-top-bar, .main-navbar {
         max-width: 1200px;
         margin: auto;
@@ -195,7 +291,6 @@ footer section article i {
     .main-header-top-bar {
         align-items: center;
     }
-
     .text-cuotas {
         max-width: none;
         font-size: 22px;
