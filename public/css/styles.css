@@ -26,15 +26,15 @@ header {
     justify-content: space-around;
 }
 .header-form {
-    width: 25%;
+    width: 35%;
 }
 .logo {
-    width: 200px;
+    width: 150px;
 }
 .text-cuotas {
     font-weight: 400;
     text-align: center;
-    width: 30%;
+    width: 400px;
 }
 .hamburguer-button {
     background-color: #03264C;
@@ -61,6 +61,14 @@ header {
     display: inline-block;
     padding: 5px 0;
     font-size: 17px;
+}
+.lupa {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding-top: 10px;
+    height: 42px;
+    width: 10%;
+    text-align: center;
 }
 
 /*main*/
@@ -316,6 +324,25 @@ footer section div i {
     }
     footer section div i:hover {
         color: lightblue;
+    }
+    .main-header-top-bar {
+        flex-wrap: nowrap;
+    }
+    .logo {
+        flex-grow: 3;
+    }
+    .header-form {
+        flex-grow: 3;
+    }
+    .lupa {
+        flex-grow: 1;
+        margin: 0 20px;
+    }
+    .text-cuotas {
+        flex-grow: 2;
+    }
+    header input {
+        margin: 0 15px;
     }
 }
 
