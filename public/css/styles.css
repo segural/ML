@@ -23,13 +23,14 @@ header {
 .main-header-top-bar{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 .header-form {
     width: 35%;
 }
 .logo {
     width: 150px;
+    margin: 0 10px;
 }
 .text-cuotas {
     font-weight: 400;
@@ -69,6 +70,8 @@ header {
     height: 42px;
     width: 10%;
     text-align: center;
+    max-width: 50px;
+    margin: 0 10px;
 }
 
 /*main*/
@@ -165,6 +168,9 @@ main section article i:hover {
     padding: 5px 15px;
     font-weight: 600 ;
 }
+.reg-button:hover {
+    background-color: #0022AA;
+}
 .main-reg-button {
     margin-top: 15px;
     text-align: center;
@@ -206,10 +212,12 @@ form input {
     padding: 20px 0;
 }
 .boton-enviar {
-    background-color: lightblue;
+    color: #000000;
     border-radius: 8px;
-    padding: 5px 10px;
-    margin:15px 0;
+    background-color: #EAC926;
+    border: solid 1px #000000;
+    padding: 5px 15px;
+    font-weight: 600 ;
 }
 .boton-enviar:hover {
     background-color: #0022AA;
