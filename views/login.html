@@ -14,6 +14,10 @@
     <header class="main-header">
         <div class="main-header-top-bar">
             <a href="/"><img src="/images/logo-mercado-liebre.svg" class="logo"></a>
+            <form class="header-form">
+                <input type="text" name="search" placeholder="Buscar productor, marcas y más">
+            </form>
+            <button type="submit" class="lupa"><i class="fas fa-search"></i></button>
         <h2 class="text-cuotas">
             <i class="fas fa-hand-holding-usd"></i>
             Comprá en cuotas y sin tarjeta de crédito</h2>
@@ -38,11 +42,11 @@
     <main>
         <div class="main-login">
         <form action="/login" method="POST">
-            <div>
+            <div class="login-separador">
                 <label for="username">Username</label>
                 <input type="text" id="username" placeholder="Ingrese su usuario" name="username">
             </div>
-            <div>
+            <div class="login-separador">
                 <label for="pass">Contraseña</label>
                 <input type="password" id="pass" placeholder="Ingresá una contraseña" name="pass">
             </div>
@@ -51,29 +55,34 @@
         </div>
     </main>
     <footer>
-        <section class="footer-section">         
-            <div class="separacion-footer">
-                <div class="footer-p">
-                <i class="fas fa-credit-card"></i>
-                <h3>Pagá con tarjeta o en efectivo</h3>
-                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p></div>
+        <section>
+            <div class="main-footer">         
+                <div class="separacion-footer">
+                    <div class="footer-p">
+                        <i class="fas fa-credit-card"></i>
+                        <h3>Pagá con tarjeta o en efectivo</h3>
+                        <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+                    </div>
                 </div>
-            <div class="separacion-footer">
-                <div class="footer-p">
-                <i class="fas fa-gift"></i>
-                <h3>Envío gratis desde los $2.500</h3>
-                <p>Solo por estar registrado en MercadoLiebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos</p></div>
+                <div class="separacion-footer">
+                    <div class="footer-p">
+                        <i class="fas fa-gift"></i>
+                        <h3>Envío gratis desde los $2.500</h3>
+                        <p>Solo por estar registrado en MercadoLiebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos</p>
+                    </div>
                 </div>
-            <div class="separacion-footer">
-                <div class="footer-p">
-                <i class="fas fa-user-shield"></i>
-                <h3>Seguridad de principio a fin</h3>
-                <p>¿No te gusta?¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estás siempre protegid@</p></div>
+                <div class="separacion-footer">
+                    <div class="footer-p">
+                        <i class="fas fa-user-shield"></i>
+                        <h3>Seguridad de principio a fin</h3>
+                        <p>¿No te gusta?¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estás siempre protegid@</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="copyr">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
             </div>
         </section>
-            <div class="copyr">
-                <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
-            </div>
     </footer>
 </body>
 </html>
