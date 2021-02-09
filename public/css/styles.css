@@ -28,6 +28,9 @@ header {
 .header-form {
     width: 35%;
 }
+.text-form {
+    padding: 0 15px;
+}
 .logo {
     width: 150px;
     margin: 0 15px;
@@ -160,6 +163,7 @@ main section article i:hover {
 }
 .control {
     width: 100%;
+    padding: 0 15px;
 }
 .reg-button {
     color: #000000;
